@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصور</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>معرض الصور</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">الرئيسية</a></li>
+                    <li><a href="#about">عن المعرض</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>مرحباً بك في معرض تصاميمي الإبداعية</h2>
+            <p>هنا أعرض لك أفضل تصاميمي الإبداعية والمبتكرة</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h3>أحدث التصاميم</h3>
+            </div>
+            <div class="gallery-grid">
+                <!-- سيتم تحميل الصور ديناميكيًا من خلال JavaScript -->
+            </div>
+            <div class="view-more">
+                <a href="#">عرض المزيد</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>عن المعرض</h3>
+                    <p>مرحباً بك في معرض الصور الخاص بي. هنا ستجد مجموعة مختارة من الصور التي التقطتها خلال رحلاتي ومسيراتي الفنية. أهدف من خلال هذا المعرض مشاركة رؤيتي الفوتوغرافية معكم.</p>
+                    <p>تتضمن المجموعة صوراً طبيعية، وصوراً للأشخاص، وتقارير بصرية من مختلف الفعاليات التي شاركت فيها.</p>
+                    <a href="about.html" class="btn">المزيد عني</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://picsum.photos/seed/photographer/500/400.jpg" alt="صورة المصور">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>معرض الصور</h3>
+                    <p>شاركني رحلتي الفوتوغرافية</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#about">عن المعرض</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تابعني</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 معرض الصور. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- نافذة الصورة المنبثقة -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
