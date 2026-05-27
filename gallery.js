@@ -108,15 +108,15 @@ function createImageElement(image) {
     
     // محاولة تحميل الصور بجميع الصيغ المدعومة
     const webpSource = document.createElement('source');
-    webpSource.setAttribute('data-srcset', `images/${imageName}.webp`);
+    webpSource.setAttribute('srcset', `images/${imageName}.webp`);
     webpSource.setAttribute('type', 'image/webp');
     
     const pngSource = document.createElement('source');
-    pngSource.setAttribute('data-srcset', `images/${imageName}.png`);
+    pngSource.setAttribute('srcset', `images/${imageName}.png`);
     pngSource.setAttribute('type', 'image/png');
     
     const jpgSource = document.createElement('source');
-    jpgSource.setAttribute('data-srcset', `images/${imageName}.jpg`);
+    jpgSource.setAttribute('srcset', `images/${imageName}.jpg`);
     jpgSource.setAttribute('type', 'image/jpeg');
     
     // إضافة جميع الصيغ إلى picture
